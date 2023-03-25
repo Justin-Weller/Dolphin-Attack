@@ -2,16 +2,17 @@
 
 My prototype for Dolphin Attack was developed using the game engine Unity. The source files are in the folder "Dolphin Attack" and the executable file is in the folder "Build" (named "Dolphin Attack.exe"). Launching this exe in the build folder will launch the game and bring you to the start menu of the game.
 
-NOTE: Importing two asset packages (cited below) resulted in two folders which may contain scripts that I did not write. I didn't use them at all but I felt I should make it known to you as the grader. These folders are under "Dolphin Attack">Assets and I added "IMPORTED" at the start of their file names. There are (non-coding) assets within those folders which I may use in the upcoming group portion of this course which is why I left that folder for the time being.
+**NOTE:** Importing two asset packages (cited below) resulted in two folders which may contain scripts that I did not write. I didn't use them at all but I felt I should make it known to you as the grader. These folders are under "Dolphin Attack">Assets and I added "IMPORTED" at the start of their file names. There are (non-coding) assets within those folders which I may use in the upcoming group portion of this course which is why I left that folder for the time being.
 
 ## Features
 
 For the prototype, I've implemented a vertical slice of my original proposal which include the following features:
+
 - Start menu (excluding the leaderboard). The player can either quit to desktop or start the game from here.
 - Pause menu. The player can resume the game, restart the game, or exit to the main menu. It can be activated or deactivated in game with the "ESC" key.
 - Pirate ship in the middle of a sea environment with a variety of platforms to allow for a highly maneuverable environment for the player.
 - Player movement, with the key 'A' moving left, 'D' moving right, spacebar to jump, double jump by pressing spacebar a second time while in the air, and a dash using the left-shift button. Additionally, the player can drop through platforms by holding the 'S' key and pressing the spacebar.
-- Player shooting, which can be executed by aiming with the mouse and firing bullets using the left mouse button. 
+- Player shooting, which can be executed by aiming with the mouse and firing bullets using the left mouse button.
 - A death screen is triggered if the player falls into the sea, instantly killing their character.
 - A few different SFX for pistol shots, dashes, and background ambience.
 
