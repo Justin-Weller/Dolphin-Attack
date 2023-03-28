@@ -11,6 +11,16 @@ public class TitleNavigator : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void startMenu()
+    {
+        SceneManager.LoadScene("TitleScreen");
+    }
+
+    public void startLeaderboard()
+    {
+        SceneManager.LoadScene("LeaderboardScreen");
+    }
+
     // If the exit button is pushed, quit the game
     public void exitGame()
     {
