@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeaderboardItemData : MonoBehaviour
+public class LeaderboardItemData
 {
 
     // Class used to store data for one leaderboard item

@@ -11,24 +11,18 @@ public class LeaderboardDisplay : MonoBehaviour
     void Start()
     {
 
-        //get data
+        //leaderboard test
+        GameObject lb = GameObject.Find("leaderboardObj");
+        lb.GetComponent<LeaderboardManager>().submitLeaderboardEntry("Connor", 2, "BigGuns");
+        lb.GetComponent<LeaderboardManager>().submitLeaderboardEntry("Justin", 5, "Soldier");
+        lb.GetComponent<LeaderboardManager>().submitLeaderboardEntry("Zak", 3, "CannonFondler");
+        lb.GetComponent<LeaderboardManager>().submitLeaderboardEntry("Finn", 1, "Hunter");
+        lb.GetComponent<LeaderboardManager>().submitLeaderboardEntry("Connor", 4, "Captain");
+        lb.GetComponent<LeaderboardManager>().submitLeaderboardEntry("Finn", 7, "Scouter");
 
-        //test data
-        List<LeaderboardItemData> leaderboardData = new List<LeaderboardItemData>();
-
-        LeaderboardItemData test1 = new LeaderboardItemData("Connor", 5, "BigGuns");
-        LeaderboardItemData test2 = new LeaderboardItemData("Justin", 5, "Soldier");
-        LeaderboardItemData test3 = new LeaderboardItemData("Zak", 5, "CannonFondler");
-        LeaderboardItemData test4 = new LeaderboardItemData("Finn", 5, "Hunter");
-        LeaderboardItemData test5 = new LeaderboardItemData("Connor", 5, "Captain");
-        leaderboardData.Add(test1);
-        leaderboardData.Add(test2);
-        leaderboardData.Add(test3);
-        leaderboardData.Add(test4);
-        leaderboardData.Add(test5);
-
+        //get leaderboard data from manager (playerPrefs)
+        List<LeaderboardItemData> leaderboardData = lb.GetComponent<LeaderboardManager>().getLeaderboardData(5);
         displayItems(leaderboardData);
-
     }
 
     //displays content of LeaderboardItemData list
