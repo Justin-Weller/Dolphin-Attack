@@ -59,6 +59,11 @@ public class GameOver : MonoBehaviour
 
         if (timer > fadeDuration + displayImageDuration)
         {
+            //Add leaderboard entry
+            // UPDATE THIS
+            GameObject.Find("EventSystem").GetComponent<LeaderboardManager>().submitLeaderboardEntry("Dude", 14, "BigGuns");
+
+
             // Go to the main menu once the timers are finished
             SceneManager.LoadScene("TitleScreen");
         }

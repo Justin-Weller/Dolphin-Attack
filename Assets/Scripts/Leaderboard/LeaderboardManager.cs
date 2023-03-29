@@ -10,7 +10,7 @@ public class LeaderboardManager : MonoBehaviour
     public const string scoreKey = "score_";
     public const string spriteNameKey = "spriteName_";
 
-    private int listCount;
+    private static int listCount;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +20,12 @@ public class LeaderboardManager : MonoBehaviour
             PlayerPrefs.SetInt(listCountKey, 0);
             PlayerPrefs.Save();
         }
-        this.listCount = PlayerPrefs.GetInt(listCountKey);
+        listCount = PlayerPrefs.GetInt(listCountKey);
     }
 
     public void submitLeaderboardEntry(string username, int score, string spriteName)
     {
+        Debug.Log("Submitting " + username);
         List<LeaderboardItemData> leaderboard = getLeaderboardData(0);
         LeaderboardItemData newEntry = new LeaderboardItemData(username, score, spriteName);
 
@@ -63,11 +64,13 @@ public class LeaderboardManager : MonoBehaviour
 
     private void savePlayerPrefsList(List<LeaderboardItemData> leaderboard)
     {
+        PlayerPrefs.DeleteAll();
+
         //sort list by score using LINQ before saving
         leaderboard = leaderboard.OrderByDescending(lid => lid.score).ToList();
 
         //update listCount
-        this.listCount = leaderboard.Count;
+        listCount = leaderboard.Count;
         PlayerPrefs.SetInt(listCountKey, listCount);
 
         int i = 0;
@@ -77,6 +80,8 @@ public class LeaderboardManager : MonoBehaviour
             PlayerPrefs.SetString(usernameKey + indexStr, item.displayName);
             PlayerPrefs.SetInt(scoreKey + indexStr, item.score);
             PlayerPrefs.SetString(spriteNameKey + indexStr, item.spriteName);
+
+            Debug.Log("Saved to playerPrefs " + item.displayName);
 
             i++;
         }
