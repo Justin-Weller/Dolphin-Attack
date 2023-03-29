@@ -31,8 +31,6 @@ public class PlayerMovement : MonoBehaviour
 
     private int curNumDoubleJumps;
 
-    private bool isJumping = false;
-
     Vector2 newVelocity;
 
     // Start is called before the first frame update

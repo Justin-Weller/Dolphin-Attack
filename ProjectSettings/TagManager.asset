@@ -8,6 +8,7 @@ TagManager:
   - Feet
   - Bullet
   - OneWayPlatform
+  - SeaBorder
   layers:
   - Default
   - TransparentFX
