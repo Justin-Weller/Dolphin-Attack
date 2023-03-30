@@ -32,9 +32,17 @@ public class GunProjectile : MonoBehaviour
         rb.velocity = direction * speed;
     }
 
-    // Will fill this in during group stage
-    // private void OnTriggerEnter2D(Collider2D other)
-    // {
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Enemy")
+        {
+            Debug.Log("Hit Dolphin!");
 
-    // }
+            // Damage the dolphin
+            other.GetComponent<DolphinHealth>().damage();
+
+            // Destroy the bullet when it hits the dolphin
+            Destroy(gameObject);
+        }
+    }
 }

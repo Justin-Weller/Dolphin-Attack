@@ -28,6 +28,11 @@ public class GameOver : MonoBehaviour
             isGameOver = true;
         }
     }
+    
+    public void killedPlayer()
+    {
+        isGameOver = true;
+    }
 
     void Update()
     {

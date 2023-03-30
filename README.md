@@ -45,3 +45,9 @@ https://blackthornprod-games.itch.io/top-down-shooter-demo
 
 Tutorial which aided in achieving one way platforms functionality:
 https://www.youtube.com/watch?v=7rCUt6mqqE8
+
+Unity forum which aided in implementing the dolphin's movement:
+https://forum.unity.com/threads/how-to-calculate-force-needed-to-jump-towards-target-point.372288/#post-3424370
+
+Dolphin Image:
+http://clipart-library.com/img/939779.png
