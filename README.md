@@ -51,3 +51,5 @@ https://forum.unity.com/threads/how-to-calculate-force-needed-to-jump-towards-ta
 
 Dolphin Image:
 http://clipart-library.com/img/939779.png
+
+Menu Background Image: https://www.freepik.com/free-vector/tropical-island-with-treasure-chest-broken-pirate-ship-cartoon-sea-landscape-with-sail-boat-after-shipwreck-with-skull-black-sails-palm-trees-gold-coins-uninhabited-island_15709554.htm
