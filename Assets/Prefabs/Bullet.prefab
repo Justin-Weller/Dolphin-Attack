@@ -247,5 +247,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeExists: 3
-  speed: 70
+  speed: 80
   shotAudio: {fileID: 6627347198931026565, guid: f3b04dcad13cd914cbf901573dfe5cf3, type: 3}
