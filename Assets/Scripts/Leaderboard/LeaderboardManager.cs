@@ -15,17 +15,23 @@ public class LeaderboardManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        refreshCount();
+    }
+
+    private void refreshCount()
+    {
         if (!PlayerPrefs.HasKey(listCountKey))
         {
             PlayerPrefs.SetInt(listCountKey, 0);
             PlayerPrefs.Save();
         }
         listCount = PlayerPrefs.GetInt(listCountKey);
+
+        Debug.Log("Count: " + listCount.ToString());
     }
 
     public void submitLeaderboardEntry(string username, int score, string spriteName)
     {
-        Debug.Log("Submitting " + username);
         List<LeaderboardItemData> leaderboard = getLeaderboardData(0);
         LeaderboardItemData newEntry = new LeaderboardItemData(username, score, spriteName);
 
@@ -38,6 +44,7 @@ public class LeaderboardManager : MonoBehaviour
     // count is number of items returned
     public List<LeaderboardItemData> getLeaderboardData(int count)
     {
+        refreshCount();
         List<LeaderboardItemData> currentLeaderboard = new List<LeaderboardItemData>();
 
         //guard clause
@@ -64,8 +71,6 @@ public class LeaderboardManager : MonoBehaviour
 
     private void savePlayerPrefsList(List<LeaderboardItemData> leaderboard)
     {
-        PlayerPrefs.DeleteAll();
-
         //sort list by score using LINQ before saving
         leaderboard = leaderboard.OrderByDescending(lid => lid.score).ToList();
 
