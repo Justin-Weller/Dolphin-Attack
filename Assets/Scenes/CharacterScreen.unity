@@ -331,6 +331,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1899602856669763586, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &42191214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -701,7 +713,7 @@ RectTransform:
   - {fileID: 42191212}
   - {fileID: 1420851852}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -876,6 +888,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666486389}
   m_CullTransparentMesh: 1
+--- !u!1001 &667227418
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1899602856669763585, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 610.3353
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 191.24957
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.48777145
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1899602856669763588, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
 --- !u!224 &998850122 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7362278318793241327, guid: 24a2ed6f88e834a4e8a76cf17f3e0b72, type: 3}
@@ -963,7 +1032,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1137686255
 GameObject:
@@ -1747,6 +1816,18 @@ MonoBehaviour:
       - m_Target: {fileID: 541921998}
         m_TargetAssemblyTypeName: TitleNavigator, Assembly-CSharp
         m_MethodName: startGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1899602856669763586, guid: d95810ec8ba65e64d861c729d68e0974, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButtonSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

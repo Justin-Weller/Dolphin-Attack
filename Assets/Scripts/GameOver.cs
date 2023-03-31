@@ -45,8 +45,8 @@ public class GameOver : MonoBehaviour
     // Ends the game and returns the player to the main menu
     private void endLevel()
     {
-        //Getting final score from WaveManager
-        int finalScore = GameObject.Find("EventSystem").GetComponent<WaveManager>().waveNumber;
+        //Getting final score from WaveManager (subtract 1 to indicate number of waves survived)
+        int finalScore = GameObject.Find("EventSystem").GetComponent<WaveManager>().waveNumber - 1;
 
         // Make the UI disappear
         healthUI.SetActive(false);

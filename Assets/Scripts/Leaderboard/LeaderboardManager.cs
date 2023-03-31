@@ -27,7 +27,6 @@ public class LeaderboardManager : MonoBehaviour
         }
         listCount = PlayerPrefs.GetInt(listCountKey);
 
-        Debug.Log("Count: " + listCount.ToString());
     }
 
     public void submitLeaderboardEntry(string username, int score, string spriteName)
