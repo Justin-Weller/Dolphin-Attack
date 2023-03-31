@@ -21,7 +21,7 @@ public class LeaderboardDisplay : MonoBehaviour
         //lb.GetComponent<LeaderboardManager>().submitLeaderboardEntry("Finn", 7, "Scouter");
 
         //get leaderboard data from manager (playerPrefs)
-        List<LeaderboardItemData> leaderboardData = EventSystem.GetComponent<LeaderboardManager>().getLeaderboardData(5);
+        List<LeaderboardItemData> leaderboardData = EventSystem.GetComponent<LeaderboardManager>().getLeaderboardData(7);
         displayItems(leaderboardData);
     }
 
