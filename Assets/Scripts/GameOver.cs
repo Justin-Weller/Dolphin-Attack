@@ -45,6 +45,9 @@ public class GameOver : MonoBehaviour
     // Ends the game and returns the player to the main menu
     private void endLevel()
     {
+        //Getting final score from WaveManager
+        int finalScore = GameObject.Find("EventSystem").GetComponent<WaveManager>().waveNumber;
+
         // Make the UI disappear
         healthUI.SetActive(false);
 
@@ -66,8 +69,8 @@ public class GameOver : MonoBehaviour
         {
             //Add leaderboard entry
             // UPDATE THIS
-            GameObject.Find("EventSystem").GetComponent<LeaderboardManager>().submitLeaderboardEntry("Dude", 14, "BigGuns");
 
+            GameObject.Find("EventSystem").GetComponent<LeaderboardManager>().submitLeaderboardEntry("Dude", finalScore, "Captain");
 
             // Go to the main menu once the timers are finished
             SceneManager.LoadScene("TitleScreen");
