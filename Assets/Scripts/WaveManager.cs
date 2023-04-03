@@ -12,6 +12,8 @@ public class WaveManager : MonoBehaviour
     public TextMeshProUGUI countdownText;
     public int waveNumber = 0;
 
+    public GameObject chest;
+
     private Transform[] spawnPoints;
     public List<GameObject> dolphinsInScene;
     
@@ -68,8 +70,13 @@ public class WaveManager : MonoBehaviour
         yield return new WaitForSeconds(1);
         roundText.gameObject.SetActive(true);
         roundText.text = "ROUND " + waveNumber.ToString();
+
+        if (waveNumber != 1) {
+            chest.GetComponent<ChestController>().showChest();
+            chest.GetComponent<ChestController>().closeChest();
+        }
+        
         yield return new WaitForSeconds(2);
-        roundText.gameObject.SetActive(false);
         
         while(numDolphins != 0)
         {
