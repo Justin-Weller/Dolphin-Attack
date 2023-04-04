@@ -500,21 +500,21 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Soldier_Idle1: 21300024
-      Soldier_Idle4: 21300030
-      Soldier_Shoot2: 21300004
-      Soldier_Walk5: 21300016
-      Soldier_Walk2: 21300010
-      Soldier_Shoot1: 21300002
-      Soldier_Idle3: 21300028
-      Soldier_Walk1: 21300008
-      Soldier_Model: 21300000
-      Soldier_Walk4: 21300014
       Soldier_Idle2: 21300026
-      Soldier_Walk7: 21300020
-      Soldier_Walk9: 21300006
-      Soldier_Walk8: 21300022
+      Soldier_Idle3: 21300028
+      Soldier_Idle4: 21300030
+      Soldier_Model: 21300000
+      Soldier_Shoot1: 21300002
+      Soldier_Shoot2: 21300004
+      Soldier_Walk1: 21300008
+      Soldier_Walk2: 21300010
       Soldier_Walk3: 21300012
+      Soldier_Walk4: 21300014
+      Soldier_Walk5: 21300016
       Soldier_Walk6: 21300018
+      Soldier_Walk7: 21300020
+      Soldier_Walk8: 21300022
+      Soldier_Walk9: 21300006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

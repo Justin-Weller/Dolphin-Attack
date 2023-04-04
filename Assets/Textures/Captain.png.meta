@@ -475,21 +475,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Captain_Walk3: 21300012
-      Captain_Walk6: 21300018
-      Captain_Walk4: 21300014
-      Captain_Walk8: 21300022
-      Captain_Walk7: 21300020
       Captain_Idle1: 21300024
-      Captain_Walk2: 21300010
-      Captain_Walk1: 21300008
       Captain_Idle2: 21300026
-      Captain_Walk9: 21300006
       Captain_Idle3: 21300028
-      Captain_Shoot2: 21300004
-      Captain_Shoot1: 21300002
-      Captain_Walk5: 21300016
       Captain_Model: 21300000
+      Captain_Shoot1: 21300002
+      Captain_Shoot2: 21300004
+      Captain_Walk1: 21300008
+      Captain_Walk2: 21300010
+      Captain_Walk3: 21300012
+      Captain_Walk4: 21300014
+      Captain_Walk5: 21300016
+      Captain_Walk6: 21300018
+      Captain_Walk7: 21300020
+      Captain_Walk8: 21300022
+      Captain_Walk9: 21300006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

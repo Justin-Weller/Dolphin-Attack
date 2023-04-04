@@ -499,22 +499,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Scouter_Walk3: 21300008
-      Scouter_Model: 21300000
-      Scouter_Walk6: 21300014
-      Scouter_Walk5: 21300012
-      Scouter_Idle4: 21300026
-      Scouter_Walk8: 21300018
-      Scouter_Walk9: 21300002
-      Scouter_Walk1: 21300004
       Scouter_Idle1: 21300020
       Scouter_Idle2: 21300022
-      Scouter_Shoot2: 21300030
       Scouter_Idle3: 21300024
-      Scouter_Walk4: 21300010
-      Scouter_Walk2: 21300006
-      Scouter_Walk7: 21300016
+      Scouter_Idle4: 21300026
+      Scouter_Model: 21300000
       Scouter_Shoot1: 21300028
+      Scouter_Shoot2: 21300030
+      Scouter_Walk1: 21300004
+      Scouter_Walk2: 21300006
+      Scouter_Walk3: 21300008
+      Scouter_Walk4: 21300010
+      Scouter_Walk5: 21300012
+      Scouter_Walk6: 21300014
+      Scouter_Walk7: 21300016
+      Scouter_Walk8: 21300018
+      Scouter_Walk9: 21300002
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -13,7 +13,7 @@ public class GameOver : MonoBehaviour
     public CanvasGroup gameOverBackgroundImage;
     public GameObject healthUI;
     public AudioSource ambientAudio;
-	public TextMeshProUGUI endingText;
+	//public TextMeshProUGUI endingText;
 	public GameObject scoreText;
     public AudioSource gameOverAudio;
     
@@ -65,7 +65,7 @@ public class GameOver : MonoBehaviour
         timer += Time.deltaTime;
         gameOverBackgroundImage.alpha = timer / fadeDuration;
 		
-		endingText.text = "You lasted " + finalScore + " waves.";
+        scoreText.GetComponent<TextMeshProUGUI>().text = "You lasted " + finalScore + " waves.";
 		scoreText.SetActive(true);
 
         if (timer > fadeDuration + displayImageDuration)
@@ -103,9 +103,6 @@ public class GameOver : MonoBehaviour
                 character = "Captain";
                 break;
         }
-			
-			
-			
 			
             GameObject.Find("EventSystem").GetComponent<LeaderboardManager>().submitLeaderboardEntry(nickName, finalScore, character);
 

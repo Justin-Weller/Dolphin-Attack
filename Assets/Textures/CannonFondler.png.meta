@@ -499,22 +499,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CannonFondler_Shoot1: 21300002
-      CannonFondler_Walk1: 21300008
-      CannonFondler_Walk3: 21300012
-      CannonFondler_Idle3: 21300028
-      CannonFondler_Model: 21300000
-      CannonFondler_Walk6: 21300018
       CannonFondler_Idle1: 21300024
+      CannonFondler_Idle2: 21300026
+      CannonFondler_Idle3: 21300028
+      CannonFondler_Idle4: 21300030
+      CannonFondler_Model: 21300000
+      CannonFondler_Shoot1: 21300002
       CannonFondler_Shoot2: 21300004
+      CannonFondler_Walk1: 21300008
       CannonFondler_Walk2: 21300010
+      CannonFondler_Walk3: 21300012
+      CannonFondler_Walk4: 21300014
+      CannonFondler_Walk5: 21300016
+      CannonFondler_Walk6: 21300018
       CannonFondler_Walk7: 21300020
       CannonFondler_Walk8: 21300022
-      CannonFondler_Walk5: 21300016
-      CannonFondler_Idle4: 21300030
-      CannonFondler_Idle2: 21300026
       CannonFondler_Walk9: 21300006
-      CannonFondler_Walk4: 21300014
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

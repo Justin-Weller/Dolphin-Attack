@@ -10,12 +10,13 @@ public class PlayerHealth : MonoBehaviour
     private bool isInvincible = false;
     public GameOver ending;
     public TextMeshProUGUI healthText;
-    // public GameObject hurtAudio;
+    private AudioSource hurtAudio;
 
     // Start is called before the first frame update
     void Start()
     {
         healthText.text = health.ToString();
+        hurtAudio = this.GetComponent<AudioSource>();
     }
 
     // If the player takes damage
@@ -24,8 +25,9 @@ public class PlayerHealth : MonoBehaviour
         // If the player has not been recently damaged
         if(!isInvincible)
         {
-            if(health > 0)
+            if (health > 0)
             {
+                hurtAudio.Play();
                 health--;
                 healthText.text = health.ToString();
                 // Play player hurt audio, removed after 1 second
