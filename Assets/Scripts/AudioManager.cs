@@ -36,7 +36,7 @@ public class AudioManager : MonoBehaviour
     private void MenuMusicCheck()
     {
         Scene currentScene = SceneManager.GetActiveScene();
-        if (currentScene.name == "Game" && sounds[1].isPlaying)
+        if (currentScene.name == "Game")
         {
             StopMenuMusic();
         }
