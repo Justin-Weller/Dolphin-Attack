@@ -623,7 +623,7 @@ TrailRenderer:
   m_Emitting: 0
 --- !u!95 &63954434
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -640,8 +640,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &63954436
 Rigidbody2D:
   serializedVersion: 4
@@ -788,6 +787,8 @@ MonoBehaviour:
   invincibilityDuration: 1
   ending: {fileID: 1018314193}
   healthText: {fileID: 168751973}
+  ogColour: {r: 0, g: 0, b: 0, a: 0}
+  sr: {fileID: 63954438}
 --- !u!114 &63954442
 MonoBehaviour:
   m_ObjectHideFlags: 0
