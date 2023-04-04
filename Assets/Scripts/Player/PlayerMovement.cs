@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
     public GameObject dashAudio;
     private TrailRenderer dashTrail;
+    private BoxCollider2D collider;
 
     private int curNumDoubleJumps;
 
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         moveAnim = GetComponent<Animator>();
         dashTrail = GetComponent<TrailRenderer>();
+        collider = GetComponent<BoxCollider2D>();
 
         curNumDoubleJumps = maxDoubleJumps;
     }
@@ -115,14 +117,20 @@ public class PlayerMovement : MonoBehaviour
     // Checks if the player is currently on the ground
     public void GroundDetection()
     {
-		RaycastHit2D leftFootHit = Physics2D.Raycast (GameObject.Find("PirateLeftFoot").transform.position, Vector2.down);
-        RaycastHit2D rightFootHit = Physics2D.Raycast (GameObject.Find("PirateRightFoot").transform.position, Vector2.down);
+		// RaycastHit2D leftFootHit = Physics2D.Raycast (GameObject.Find("PirateLeftFoot").transform.position, Vector2.down);
+        // RaycastHit2D rightFootHit = Physics2D.Raycast (GameObject.Find("PirateRightFoot").transform.position, Vector2.down);
 
-		// If on the ground, reset jump counter
-        if(leftFootHit.distance < groundedDistance || rightFootHit.distance < groundedDistance)
+        if(Physics2D.BoxCast(collider.bounds.center, collider.bounds.size, 0f, Vector2.down, 1f) && rb.velocity.y == 0)
         {
             curNumDoubleJumps = maxDoubleJumps;
-		}
+        }
+
+		// If on the ground, reset jump counter
+        // if(leftFootHit.distance < groundedDistance || rightFootHit.distance < groundedDistance)
+        // {
+            // curNumDoubleJumps = maxDoubleJumps;
+		// }
+
 	}
 
     private void dash()

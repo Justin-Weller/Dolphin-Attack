@@ -15,10 +15,7 @@ public class GameOver : MonoBehaviour
     public AudioSource ambientAudio;
 	public TextMeshProUGUI endingText;
 	public GameObject scoreText;
-
-
-    // Will add in group portion
-    // public AudioSource gameOverAudio;
+    public AudioSource gameOverAudio;
     
     private bool isGameOver;
     private float timer;
@@ -61,8 +58,7 @@ public class GameOver : MonoBehaviour
         // Play the ending audio
         if(!hasAudioPlayed)
         {
-            // Uncomment during group portion
-            // gameOverAudio.Play();
+            gameOverAudio.Play();
             hasAudioPlayed = true;
         }
 

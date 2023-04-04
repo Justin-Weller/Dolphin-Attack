@@ -52,8 +52,14 @@ https://forum.unity.com/threads/how-to-calculate-force-needed-to-jump-towards-ta
 Dolphin Image:
 http://clipart-library.com/img/939779.png
 
-Menu Background Image: https://www.freepik.com/free-vector/tropical-island-with-treasure-chest-broken-pirate-ship-cartoon-sea-landscape-with-sail-boat-after-shipwreck-with-skull-black-sails-palm-trees-gold-coins-uninhabited-island_15709554.htm
+Menu Background Image: 
+https://www.freepik.com/free-vector/tropical-island-with-treasure-chest-broken-pirate-ship-cartoon-sea-landscape-with-sail-boat-after-shipwreck-with-skull-black-sails-palm-trees-gold-coins-uninhabited-island_15709554.htm
 
-Menu Sound Effects: https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116
+Menu Sound Effects: 
+https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116
 
-Menu Music: https://assetstore.unity.com/packages/audio/music/bard-s-tales-peaceful-harp-music-pack-lite-lite-190602
+Menu Music: 
+https://assetstore.unity.com/packages/audio/music/bard-s-tales-peaceful-harp-music-pack-lite-lite-190602
+
+Death Screen Audio:
+https://www.youtube.com/watch?v=j_nV2jcTFvA

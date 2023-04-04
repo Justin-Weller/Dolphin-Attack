@@ -49,10 +49,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeDuration: 0.5
-  displayImageDuration: 4
+  displayImageDuration: 8
   gameOverBackgroundImage: {fileID: 0}
   healthUI: {fileID: 0}
   ambientAudio: {fileID: 0}
+  endingText: {fileID: 0}
+  scoreText: {fileID: 0}
+  gameOverAudio: {fileID: 0}
 --- !u!61 &7292274930384779229
 BoxCollider2D:
   m_ObjectHideFlags: 0
