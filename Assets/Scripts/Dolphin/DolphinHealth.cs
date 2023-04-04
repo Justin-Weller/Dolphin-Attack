@@ -11,11 +11,11 @@ public class DolphinHealth : MonoBehaviour
     public void damage()
     {
         health--;
-
+		Instantiate(deathEffect, transform.position, Quaternion.identity);
         // When the dolphin runs out of health it dies (create a death effect and destroy gameobject)
         if(health == 0)
         {
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            //Instantiate(deathEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

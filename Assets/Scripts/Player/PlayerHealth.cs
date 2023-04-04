@@ -11,12 +11,15 @@ public class PlayerHealth : MonoBehaviour
     public GameOver ending;
     public TextMeshProUGUI healthText;
     private AudioSource hurtAudio;
+	public Color ogColour;
+	public SpriteRenderer sr;
 
     // Start is called before the first frame update
     void Start()
     {
         healthText.text = health.ToString();
         hurtAudio = this.GetComponent<AudioSource>();
+		ogColour = sr.color;
     }
 
     // If the player takes damage
@@ -30,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
                 hurtAudio.Play();
                 health--;
                 healthText.text = health.ToString();
+				sr.color = Color.red;
                 // Play player hurt audio, removed after 1 second
                 // Destroy(Instantiate(hurtAudio), 1);
 
@@ -50,6 +54,7 @@ public class PlayerHealth : MonoBehaviour
         isInvincible = true;
         yield return new WaitForSeconds(invincibilityDuration);
         isInvincible = false;
+		sr.color = ogColour;
     }
 
     // If the player picks up a heart and heals
