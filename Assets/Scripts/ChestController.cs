@@ -9,6 +9,7 @@ public class ChestController : MonoBehaviour
     public Sprite openTexture, closedTexture;
     private SpriteRenderer ren;
     private bool isChestOpen = false;
+    private bool isChestShown = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +19,7 @@ public class ChestController : MonoBehaviour
 
     void Update()
     {
-        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), this.GetComponent<Collider2D>(), isChestOpen);
+        Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), this.GetComponent<Collider2D>(), isChestOpen || !isChestShown);
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
@@ -30,6 +31,7 @@ public class ChestController : MonoBehaviour
     }
 
     public void showChest() {
+        isChestShown = true;
         ren.enabled = true;
     }
 
