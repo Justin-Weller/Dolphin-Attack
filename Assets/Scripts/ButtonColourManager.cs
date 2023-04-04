@@ -21,22 +21,11 @@ public class ButtonColourManager : MonoBehaviour
         // Set all button colors to white
         for(int i = 0; i < characterButtons.Length; i++)
         {
-            // ColorBlock oldButtonColors = characterButtons[i].colors;
-            // oldButtonColors.normalColor = new Color32(255, 255, 255, 255);
-            // oldButtonColors.selectedColor = new Color32(255, 255, 255, 255);
-            // characterButtons[i].colors = oldButtonColors;
-
-            // Make all buttons interactable
+            // Make all buttons interactable, thus setting them all to white
             characterButtons[i].interactable = true;
         }
 
-        // Set the selected buttons color
-        // ColorBlock selectedButtonColors = characterButtons[selectedButtonIndex].colors;
-        // selectedButtonColors.normalColor = new Color32(255, 221, 168, 255);
-        // selectedButtonColors.selectedColor = new Color32(255,221, 168, 255);
-        // characterButtons[selectedButtonIndex].colors = selectedButtonColors;
-
-        // Disable interaction on selected button
+        // Disable interaction on selected button, thus setting the selected buttons colour
         characterButtons[selectedButtonIndex].interactable = false;
     }
 }
