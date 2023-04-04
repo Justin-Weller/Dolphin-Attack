@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameOver : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class GameOver : MonoBehaviour
     public CanvasGroup gameOverBackgroundImage;
     public GameObject healthUI;
     public AudioSource ambientAudio;
+	public TextMeshProUGUI endingText;
+	public GameObject scoreText;
+
 
     // Will add in group portion
     // public AudioSource gameOverAudio;
@@ -64,13 +68,50 @@ public class GameOver : MonoBehaviour
 
         timer += Time.deltaTime;
         gameOverBackgroundImage.alpha = timer / fadeDuration;
+		
+		endingText.text = "You lasted " + finalScore + " waves.";
+		scoreText.SetActive(true);
 
         if (timer > fadeDuration + displayImageDuration)
         {
             //Add leaderboard entry
-            // UPDATE THIS
-
-            GameObject.Find("EventSystem").GetComponent<LeaderboardManager>().submitLeaderboardEntry("Dude", finalScore, "Captain");
+			string nickName = "Dude";
+			if(PlayerPrefs.GetString("nickname")!="")
+			{
+				nickName = PlayerPrefs.GetString("nickname");
+			}
+			
+			string character;
+			switch (PlayerPrefs.GetInt("selectedCharacter"))
+        {
+            case 2:
+				character = "BigGuns";
+                break;
+            case 1:
+                character = "CannonFondler";
+                break;
+            case 5:
+                character = "Captain";
+                break;
+            case 3:
+                character = "Hunter";
+                break;
+            case 0:
+                character = "Scouter";
+                break;
+            case 4:
+                character = "Soldier";
+                break;
+            default:
+                //Debug.Log("Invalid spriteName. Displaying default.");
+                character = "Captain";
+                break;
+        }
+			
+			
+			
+			
+            GameObject.Find("EventSystem").GetComponent<LeaderboardManager>().submitLeaderboardEntry(nickName, finalScore, character);
 
             // Go to the main menu once the timers are finished
             SceneManager.LoadScene("TitleScreen");

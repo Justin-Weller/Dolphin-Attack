@@ -3,7 +3,17 @@ guid: ba283e5ce539fb04bb2afc218805d3fd
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - placeNum: {instanceID: 0}
+  - username: {instanceID: 0}
+  - spriteImage: {instanceID: 0}
+  - score: {instanceID: 0}
+  - BigGuns: {fileID: 21300000, guid: 676cecfd4f18d6e47b2d1965bd5d98d4, type: 3}
+  - CannonFondler: {fileID: 21300000, guid: e389695e5b772c44e85e43fc260e59c2, type: 3}
+  - Captain: {fileID: 21300000, guid: 0cbc4b8c364d9374a94859d64e539343, type: 3}
+  - Hunter: {fileID: 21300000, guid: 76e5083c2224ad74f8b851c105613ccd, type: 3}
+  - Scouter: {fileID: 21300000, guid: 7b2d9e5cf32622d478e133efbc8688c0, type: 3}
+  - Soldier: {fileID: 21300000, guid: 67b23418d7527cc4c9c08c0fe242aca5, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
