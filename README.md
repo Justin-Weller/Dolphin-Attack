@@ -7,6 +7,7 @@ This game was created for CS 4483 at Western University by [Justin Weller](https
 Dolphin-Attack is a 2D endless wave survival game where you play as a Pirate fighting to protect his ship from evil attack-dolphins!
 
 - Select your character and a nickname on the character selection screen
+- In-Game you can access a pause menu **[ESC]**
 - Run **[W, A, S, D]**, Jump **[Space]**, Drop through platforms **[S+Jump]**, and Dash **[Shift]** across your ship to avoid dolphins
 - Watch your **health points** carefully on the **top corner** of the screen
 - Kill dolphins by aiming your weapon with your **cursor** and firing with **left click**
