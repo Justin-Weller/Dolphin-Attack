@@ -46,7 +46,7 @@ public class WaveManager : MonoBehaviour
 
     void increaseDifficulty() {
         //Adds 0.5 every round
-        dolphinGravityScale += waveNumber / 2;
+        dolphinGravityScale += 0.5f;
         //Number of dolphins increases every 3 rounds
         dolphinsToSpawn += (int) (waveNumber / 3);
     }
