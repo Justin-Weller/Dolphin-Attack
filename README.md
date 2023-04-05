@@ -4,10 +4,10 @@ This game was created for CS 4483 at Western University by [Justin Weller](https
 
 ## Features
 
-Dolphin-Attack is a 2D platformer game where you play as a Pirate fighting to protect his ship from evil attack-dolphins!
+Dolphin-Attack is a 2D endless wave survival game where you play as a Pirate fighting to protect his ship from evil attack-dolphins!
 
 - Select your character and a nickname on the character selection screen
-- Run **[W, A, S, D]**, Jump **[Space]**, and Dash **[Shift]** across your ship to avoid dolphins
+- Run **[W, A, S, D]**, Jump **[Space]**, Drop through platforms **[S+Jump]**, and Dash **[Shift]** across your ship to avoid dolphins
 - Watch your **health points** carefully on the **top corner** of the screen
 - Kill dolphins by aiming your weapon with your **cursor** and firing with **left click**
 - Overcome the **waves** as they increase in difficulty with more aggressive dolphins
@@ -16,7 +16,7 @@ Dolphin-Attack is a 2D platformer game where you play as a Pirate fighting to pr
 
 ## Install & Run
 
-Dolphin Attack was developed using the Unity game engine. The source code is in the folder "Dolphin Attack" and the **executable file** is in the **"Build"** folder (named **"Dolphin Attack.exe"**). Launching this exe in the build folder will launch the game and bring you to the start menu of the game.
+Dolphin Attack was developed using the Unity game engine. The source code is in the folder "Dolphin-Attack" and the **executable file** is in the **"Build"** folder (named **"Dolphin Attack.exe"**). Launching this exe in the build folder will launch the game and bring you to the start menu of the game.
 
 **NOTE:** Importing two asset packages (cited below) resulted in two folders which may contain scripts that we did not write or use. These folders are under "Dolphin Attack">Assets and we added "IMPORTED" at the start of their file names.
 
