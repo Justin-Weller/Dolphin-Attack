@@ -48,7 +48,8 @@ public class WaveManager : MonoBehaviour
         //Adds 0.5 every round
         dolphinGravityScale += 0.5f;
         //Number of dolphins increases every 3 rounds
-        dolphinsToSpawn += (int) (waveNumber / 3);
+        dolphinsToSpawn = 2 + (int)(waveNumber / 2);
+        //dolphinsToSpawn++;
     }
 
     private IEnumerator startWave(int numDolphins)
@@ -69,7 +70,7 @@ public class WaveManager : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         roundText.gameObject.SetActive(true);
-        roundText.text = "ROUND " + waveNumber.ToString();
+        roundText.text = "WAVE " + waveNumber.ToString();
 
         if (waveNumber != 1) {
             chest.GetComponent<ChestController>().showChest();
