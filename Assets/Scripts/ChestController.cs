@@ -43,11 +43,11 @@ public class ChestController : MonoBehaviour
     }
 
     public void openChest() {
-        ren.sprite = openTexture;
+        ren.sprite = closedTexture;
         this.isChestOpen = true;
     }
     public void closeChest() {
-        ren.sprite = closedTexture;
+        ren.sprite = openTexture;
         this.isChestOpen = false;
     }
 
